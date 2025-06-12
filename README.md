@@ -15,7 +15,7 @@
 
 --------------------//----------------//-----------------------------//-------------------------------------//
 
-# Agentic_AI_Workshop - Day 3
+# Agentic_AI_Workshop - Day 3 & Module-3
 
 **Last Updated:** 11/6/2025
 
@@ -60,5 +60,22 @@ pip install sentence-transformers
 
 streamlit run rag_qa_system.py
 
+```
 --------------------//----------------//-----------------------------//-------------------------------------//
 
+# Agentic_AI_Workshop - Day 4 & Module-4
+
+
+# Task Name - Project: Healthcare Policy Sales Agent
+
+**Last Updated:** 12/6/2025
+
+## Overview
+
+This assistant is designed to help users find the most suitable health insurance policies based on their personal and family healthcare needs. By collecting key details such as age, family type, number of dependents, and special requirements, the system intelligently matches user profiles with the best-fit insurance plans available in the dataset.
+
+The assistant ensures personalized policy suggestions and clear explanations for each recommendation. It focuses solely on healthcare insurance coverage and is trained to respond only using the provided data.
+
+Link also attached in Healthcare Policy Agent PDF 
+
+--------------------//----------------//-----------------------------//-------------------------------------//
