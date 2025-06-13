@@ -200,11 +200,44 @@ streamlit run study_assistant_gemini.py
 ```
 # Agentic_AI_Workshop - Day 5 & Module-7
 
-# Task Name - Project: 
+# Task Name - Project: Build an Intelligent Travel Assistant AI
 
 **Last Updated:** 13/6/2025
 
+## Overview
+
+A powerful AI-powered travel assistant that provides comprehensive information about any destination worldwide, including weather forecasts, top attractions, best times to visit, and travel tips.
+
+## Features
+
+- **Real-time Weather Data**: Get current weather conditions for any destination using WeatherAPI.com
+- **Top Attractions**: Discover the most popular tourist attractions at your destination
+- **Best Time to Visit**: Learn about seasonal information and climate details
+- **Travel Tips**: Get insights on local customs, safety advice, and transportation options
+- **Caching System**: Efficient caching to avoid rate limits and improve performance
+- **User-friendly Interface**: Clean, tabbed interface built with Streamlit
+
+## Installation
 
 
+Install the necessary dependencies:
+
+```bash
+
+1. Navigate to the project directory:
+```bash
+cd "IHUB_TASK_Agentic_AI_Workshop/Day 5/Module7"
+
+pip install langchain langchain-google-genai langchain-community python-dotenv requests streamlit duckduckgo-search
+
+Set Up the .env File:
+
+create env [ GOOGLE_API_KEY= Your Api key , WEATHER_API_KEY= Your Api key]
+
+Run Commands
+
+streamlit run travel_assistant_streamlit.py
+
+```
 
 --------------------//----------------//-----------------------------//-------------------------------------//
