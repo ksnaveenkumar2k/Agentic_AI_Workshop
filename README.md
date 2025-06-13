@@ -234,6 +234,8 @@ Set Up the .env File:
 
 create env [ GOOGLE_API_KEY= Your Api key , WEATHER_API_KEY= Your Api key]
 
+weather api key = [ https://www.weatherapi.com/]
+
 Run Commands
 
 streamlit run travel_assistant_streamlit.py
