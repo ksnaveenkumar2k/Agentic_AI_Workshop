@@ -148,3 +148,57 @@ research_report.md: Generated markdown report (output).
 .env: Environment file for API keys (not tracked in Git).
 
 --------------------//----------------//-----------------------------//-------------------------------------//
+
+# Agentic_AI_Workshop - Day 5 & Module-6
+
+
+# Task Name - Project: Study Assistant for Quiz Question Generation
+
+**Last Updated:** 13/6/2025
+
+## Overview
+
+The Study Assistant with Gemini AI is a web application designed to help students study more effectively. Users can upload a PDF file (e.g., study material or lecture notes), and the application will:
+
+Extract text from the PDF.
+
+Generate a concise summary of the content in 3-5 bullet points.
+
+Create 3 multiple-choice quiz questions based on the summary, with answers displayed in the format Answer: b) Correct answer.
+
+The application uses the Gemini API (gemini-1.5-flash) for natural language processing tasks like summarization and question generation. It is built using Streamlit for the web interface, PyPDF2 for PDF text extraction, and LangChain for managing prompts and API interactions.
+
+This project is ideal for students who want to quickly review key concepts and test their understanding through quizzes.
+
+**Prerequisites**
+
+Before running the project, ensure you have the following:
+
+Python: Version 3.8 or higher.
+
+Google API Key: You need a Google API key to use the Gemini API. You can obtain one from Google AI Studio.
+
+PDF File: A text-based PDF file to upload (e.g., Prompt_Engineering.pdf).
+
+**Requirements**
+
+## Installation
+
+Install the necessary dependencies:
+
+```bash
+pip install --upgrade PyPDF2 langchain langchain-community google-generativeai langchain-google-genai python-dotenv streamlit
+
+Set Up the .env File:
+
+create env [ GOOGLE_API_KEY= Your Api key]
+
+Run Commands
+
+streamlit run study_assistant_gemini.py
+
+````
+
+
+
+--------------------//----------------//-----------------------------//-------------------------------------//
