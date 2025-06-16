@@ -286,5 +286,47 @@ streamlit run .\langgraph_competitor_analysis.py --server.port 8502
 
 ```
 
+# Agentic_AI_Workshop - Hackathon
+
+# Task Name - HR Copilot for Daily Ops
+
+**Last Updated:** 16/6/2025
+
+# HR RAG QA System with AI Agents
+
+This project is an AI-powered HR Query Assistant designed to automate responses to repetitive HR queries, reducing the workload on HR teams. It uses a Retrieval-Augmented Generation (RAG) pipeline to answer questions based on HR policy documents, classifies query intents, triggers mock actions, and escalates sensitive queries (e.g., mental health leave) to human HR staff with conversation context.
+
+## Problem Statement
+HR teams spend significant time on repetitive queries and manual administrative tasks, limiting their capacity for strategic initiatives. This system addresses this by:
+- Accepting queries via a simulated Slack/WhatsApp interface.
+- Classifying intents (e.g., leave, appraisal, payslip, interview, escalate).
+- Fetching answers from HR policy PDFs using RAG.
+- Triggering mock actions (e.g., appraisal reminders, interview scheduling).
+- Escalating sensitive queries with full conversation context.
+
+## Features
+- **Query Interface**: Simulated Slack/WhatsApp input box for HR queries.
+- **Intent Classification**: Identifies query intent (leave, appraisal, payslip, interview, escalate) using keyword-based rules.
+- **RAG Pipeline**: Extracts answers from HR policy PDFs using FAISS and SentenceTransformer embeddings.
+- **Mock Actions**: Simulates HR tasks like sending appraisal reminders or scheduling interviews.
+- **Escalation**: Forwards sensitive queries (e.g., mental health leave) to HR with conversation history.
+
+```bash
+
+pip install streamlit fitz faiss-cpu numpy langchain-google-genai sentence-transformers python-dotenv
+
+Set Up the .env File:
+
+create env  [ GEMINI_API_KEY = Your Api key]
+
+Run Commands
+
+ cd .\Agentic_AI_Workshop\Hackathon\
+
+ streamlit run "HR Copilot.py"   
+
+```
+
+
 
 --------------------//----------------//-----------------------------//-------------------------------------//
