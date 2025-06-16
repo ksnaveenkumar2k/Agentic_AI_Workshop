@@ -242,4 +242,49 @@ streamlit run travel_assistant_streamlit.py
 
 ```
 
+# Agentic_AI_Workshop - Day 6 & Module-10
+
+# Task Name - Project: Creating a Conversation AI
+
+**Last Updated:** 16/6/2025
+
+## Overview
+
+This application is a multi-agent AI system built with Streamlit and LangGraph to provide comprehensive market and investment analysis. It analyzes competitor landscapes, market dynamics, and investment potential for specified business categories in given locations. The system uses OpenStreetMap data via Nominatim and Overpass APIs to gather real-world competitor information and generates detailed reports with visualizations.
+
+## Features
+
+**Competitor Analysis:** Identifies nearby competitors, estimates footfall, revenue, and market share
+
+**Market Intelligence:** Calculates market size, growth rate, saturation, and opportunity scores
+
+**Investment Analysis:** Provides ROI projections, payback periods, risk assessments, and recommendations
+
+**Interactive UI:** Streamlit-based interface with downloadable reports and visualizations
+
+**LangGraph Workflow:** Orchestrates analysis through distinct agent nodes for modularity and scalability
+
+## Installation
+
+Install the necessary dependencies:
+
+
+```bash
+
+pip install streamlit requests pandas plotly numpy langgraph typing-extensions
+pip install langgraph==0.2.38
+
+Set Up the .env File:
+
+create env  [ GEMINI_API_KEY = Your Api key]
+
+Run Commands
+ cd .\Agentic_AI_Workshop\Day 6>
+
+streamlit run .\langgraph_competitor_analysis.py --server.port 8502
+
+
+```
+
+
 --------------------//----------------//-----------------------------//-------------------------------------//
