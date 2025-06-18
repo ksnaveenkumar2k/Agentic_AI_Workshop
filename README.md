@@ -326,7 +326,7 @@ Run Commands
  streamlit run "HR Copilot.py"   
 
 ```
-
+--------------------//----------------//-----------------------------//-------------------------------------//
 
 # Agentic_AI_Workshop - Hackathon
 
@@ -386,6 +386,58 @@ Run Commands
  streamlit run "HR Copilot.py"   
 
 ```
+--------------------//----------------//-----------------------------//-------------------------------------//
 
+# Agentic_AI_Workshop - Module11
+
+# Task Name - Create an Agent Using LLM and Custom Mathematical Functions
+
+**Last Updated:** 18/6/2025
+
+
+# Math & General Query Agent
+
+This is a Python application built using Streamlit, LangGraph, and the Google Gemini API (via LangChain) to create an intelligent agent capable of handling both mathematical and general queries. The agent can perform basic arithmetic operations (addition, subtraction, multiplication, division) and respond to general questions using the LLM.
+
+## Features
+- **Mathematical Operations**: Supports addition, subtraction, multiplication, and division with two numbers (e.g., "10 + 5").
+- **General Queries**: Handles non-mathematical questions (e.g., "What time is it?") using the Gemini LLM.
+- **User Interface**: Provides a simple Streamlit-based web interface for input and response display.
+- **Error Handling**: Includes checks for invalid inputs, such as division by zero or insufficient numbers.
+- **Current Time Display**: Shows the current date and time (e.g., 09:34 AM IST, June 18, 2025).
+
+## Architecture
+- **Start**: The application begins by accepting a user query.
+- **Chatbot Node**: Determines if the query is mathematical or general. For math queries, it extracts numbers and operations; for general queries, it uses the LLM.
+- **Tools Node**: Executes mathematical operations if routed from the chatbot.
+- **End**: Concludes the process with a response (either a calculated result or LLM output).
+
+## Prerequisites
+
+- Python 3.11 or higher
+- Required Python packages:
+  - `streamlit`
+  - `langchain-google-genai`
+  - `langgraph`
+  - `python-dotenv`
+
+## Installation
+
+
+```bash
+
+pip install streamlit langchain-google-genai langgraph python-dotenv
+
+Set Up the .env File:
+
+create env  [ GOOGLE_API_KEY = Your Api key]
+
+Run Commands
+
+ cd .\Agentic_AI_Workshop\Day 7\
+
+ streamlit run math_agent.py  
+
+```
 
 --------------------//----------------//-----------------------------//-------------------------------------//
