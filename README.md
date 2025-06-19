@@ -485,6 +485,66 @@ Run Commands
 streamlit run research_summarization_agent.py
 
 ```
+--------------------//----------------//-----------------------------//-------------------------------------//
+
+# Agentic_AI_Workshop - Hackathon
+
+# Task Name - HR Copilot for Daily Ops [Using Multiple Agent]
+
+**Last Updated:** 19/6/2025
+
+## Overview
+
+HR Copilot streamlines HR processes by answering policy queries, automating routine tasks, and escalating sensitive issues. It uses a RAG-based system to retrieve information from a PDF dataset (`TechTrend_Dataset.pdf`), powered by FAISS and Sentence Transformers. The application is built with Streamlit for a user-friendly interface and LangGraph for orchestrating four specialized agents.
+
+## Features
+
+- **Query Handling**: Answers HR questions (e.g., leave policies, compliance deadlines) using RAG.
+- **Intent Detection**: Classifies queries as Operational, Sensitive, or Compliance.
+- **Task Automation**:
+  - Leave approval
+  - Onboarding
+  - Compliance reminders
+  - Personal details updates
+  - Employee recognition nominations
+- **Human Escalation**: Routes sensitive issues (e.g., harassment) to HR leads.
+- **Source Attribution**: Displays retrieved policy chunks with source and chunk ID.
+- **Scalable Workflow**: Modular LangGraph architecture for adding new agents or tools.
+
+## Agents
+
+HR Copilot includes **four agents**, each handling a specific function:
+1. **Intent Detection Agent**: Classifies queries into Operational, Sensitive, or Compliance using Gemini LLM.
+2. **Knowledge Retrieval Agent**: Retrieves relevant policy chunks from `TechTrend_Dataset.pdf` using FAISS and Sentence Transformers.
+3. **Task Automation Agent**: Automates workflows for Operational and Compliance queries (e.g., leave approval, compliance nudges).
+4. **Human Escalation Agent**: Escalates Sensitive queries to HR leads with summarized context.
+
+## Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- Git
+- Internet connection for package downloads and Gemini API
+- Google Gemini API key
+
+### Dependencies
+Install the required Python packages:
+
+```bash
+
+pip install -U streamlit pymupdf faiss-cpu sentence-transformers google-generativeai langchain langgraph langchain-community langchain-google-genai python-dotenv reportlab
+
+Set Up the .env File:
+
+create env  [ GEMINI_API_KEY = Your Api key]
+
+Run Commands
+
+ cd .\Agentic_AI_Workshop\Hackathon\new_19_hackathon
+
+ streamlit run "HR Copilot.py"   
+
+```
 
 
 --------------------//----------------//-----------------------------//-------------------------------------//
